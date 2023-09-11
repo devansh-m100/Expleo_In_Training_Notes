@@ -1,0 +1,82 @@
+Log 4j Topic – 11/9/2023 - 
+ 
+Ref Website - https://www.browserstack.com/guide/log4j-in-selenium
+ 
+1) Purpose of Logging your tests results. 
+2) We have previously seen HTML reports before but it not Logs.
+3) From recently they are using log 4j 2 as a latest version.
+ 
+4) What is Logging ? Defined.
+ 
+Logging is a process that takes applications to a newer level with information logs on how the applications may or may not have performed/executed. It gives an exact idea of software performance, including any shortcomings.
+ 
+Log4j in Selenium is one such logging framework that helps in gathering information in the form of logs or log files.
+ 
+PURPOSE OF LOGGING - 
+ 
+5) What is Log4j in Selenium?
+ 
+Log4j is a logging framework written in Java that provides an easy way for logging in Selenium. In a nutshell, the framework gives out information about everything that goes on during the software execution.
+ 
+Log4j also provides insight into anything that may have gone wrong during software execution or automation. Overall, Log4j documents the output in the form of logs that can be examined later for purposes such as auditing small and large-scale Selenium projects.
+ 
+Let’s take a look at the various components of the Log4j logging framework.
+ 
+6) Components of Log4j - 
+ 
+The Log4j logging framework comprises the following components:
+ 
+a) Logger
+b) Appenders
+c) Layout
+ 
+7) a) Logger - 
+ 
+The function of the logger in Log4j is basically storing and capturing all the necessary logging information that will be generated using the framework.
+ 
+To truly understand its functioning, let’s dig a little deeper and discuss the logger class, and log level methods. The loggers also decide which priority is going to be captured.
+ 
+Logger has logger class & logger levels
+ 
+i) Logger Class - 
+
+
+ 
+Log 4j 2 latest methods - 
+ 
+OFF
+ 
+FATAL
+ 
+ERROR - To start logging messaegs using this basic configuration all you need to is to obtain a logger instance using the Log Manage class.
+ 
+WARN
+ 
+INFO - private static Loggefr logger = LogManager.getLogger(MyService.class);
+Then you can use the logger object with methods corresponding to the log level you want.
+ 
+DEBUG
+ 
+TRACE - logger.error("This is an error message");
+
+8) Steps to successfully run log 4j version 2 with Selenium WebDriver.
+How to Use Log4j in Selenium
+Follow the steps below to successfully run Log4j with Selenium Webdriver:
+
+1) Write an automation script, such as the one in the example below. It is a simple script that opens a URL, send keys to username and password, and ends the script when it clicks the login button.
+2) After creating the script, create a log4j.properties file and specify the root logger, appended, and layout information in the file.
+3) Import log4j dependencies like Logger, PropertyConfigurator, and add them to the script along with the logger class.
+4) Add the messages that will be displayed in the log file.
+
+**With respect to an example program we had to 
+i) first create a 'log' reference variable using 'public static Logger log;' before @BeforeTest Annotation.
+ii) log instance is created using 'log = LogManager.getLogger(Login.class)' inside the function that is written in @BeforeTest.
+iii) Then log.info("Opening Google") message is recorded after running the website & opening "google.com".
+iv) log.error ("Our_Message") is also added which is to be added in the catch block of try --- catch block for error handling
+v) Then we simply follow the process written above in Step 2 , 3 , 4
+
+
+ 
+ 
+ 
+
