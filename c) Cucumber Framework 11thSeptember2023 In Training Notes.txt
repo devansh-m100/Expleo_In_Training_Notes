@@ -74,6 +74,8 @@ As per the definition, these are just two annotation @After & @Before. In the co
 
 2) Cucumber Tags - Normally used over the feature file to classify the scenarios over the feature files as per their given tag name.
 
+We can have multiple tags for a given scenario in the feature file.
+
 Tags are user defined and we can given any name to it such as @Smoke, @Regression, etc.
 
 
