@@ -42,17 +42,42 @@ A feature file can be given a description to make the documentation more legible
 
 *BackGround - helps you to add some context to the scenario. 
 
+**Syntax Of Gherkin - 
+
 GIVEN - Precondition of a particular test.
-WHEN - 
-THEN - 
+WHEN - [Event or Trigger]
+THEN - [Expected Output]
 AND & BUT - combine mulitple into 
+# - For comment
+BACKGROUND - Add some context to the scenario.
 
 2) Step Definitions -
+
 *Its a JAVA file.
 *Stores the mapping data between each step of a scenario between feature file & code to be executed.
 *Used to map feature file to the code, It can use both Java & Selenium commands.
 
+But we will not execute this Step Definition, we will execute only feature.
+
 3) TEST RUNNER FILE - 
+
+To run the test, one needs a Test Runner File, which is a JUnit Test Runner Class containing the Step Definition location and the other primary metadata required to run the test.
+
+The Test Runner File uses the @RunWith() Annotation from JUnit for executing tests. It also uses the @CucumberOptions Annotation to define the location of feature files, step definitions, reporting integrations, etc.
+
+
+Features of Cucumber -
+
+1) Cucumber Hooks - Blocks of code that runs before or after each scenario. So we can define anywhere in our project. Eg - Step Definition.
+
+As per the definition, these are just two annotation @After & @Before. In the console, we can see the blocks getting executed and giving clear output. We can also execute the hooks for specific tags.
+
+2) Cucumber Tags - Normally used over the feature file to classify the scenarios over the feature files as per their given tag name.
+
+Tags are user defined and we can given any name to it such as @Smoke, @Regression, etc.
+
+
+
 
 
 

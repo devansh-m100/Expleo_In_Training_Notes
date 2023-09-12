@@ -46,6 +46,13 @@ i) Pros - type leverages the advantages of all kind of related frameworks.
 
 ii) Cons - tests are fully scripted in Hybrid Framework.
 
+Three examples of Hybrid Driven Frameworks - 
+
+7) What is Data Driven Testing Framework in Selenium?
+
+Data Driven framework is used to drive test cases and suites from an external data feed. The data feed can be data sheets like xls, xlsx, and csv files.
+
+
 
 
 
