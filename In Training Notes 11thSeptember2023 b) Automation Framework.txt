@@ -1,0 +1,54 @@
+AUTOMATION FRAMEWORK - Article + Power Point Slides
+
+1) What is Selenium Framework?
+
+Selenium framework is a suite of automation testing tools based on JavaScript Framework.
+
+a) It could run tests directly on the target browser, drive the interactions on the required web page and rerun them without any manual input.
+
+b) It eliminates repetitive manual testing that consumes lots of time & effort.
+
+c) Confirms with the idea of Agile & DevOps, which endorse the continuous delivery workflow.
+
+There is Selenium WebDriver & IDE too. 
+
+(PPT)
+1) Linear Driven Framework (IDE) - pros -> 
+
+2)Modular Driven Framework ()- 
+
+3) Behaviour Driven Framework - 
+which allows testers  & developers to participate actively in the project.
+It also increases collaboration between testers & developers.
+
+Pro of BDF - It can understable and readable by non technical persons.
+
+Cons of BDF - TEchnical expertise is required.
+
+4) Data Driven Framework - Getting data from external sources / files like Excel Files, Text Files, CSV Files, ODBC Sources, DAO Objects and they are loaded into the variables of the test script.
+
+Its Pros - Reduces no. of scripts.
+Its Cons - High techincal expertise required.
+
+5) Keyword Driven Framework - 
+
+a) also known as table - driven testing.
+b) its suitable for only small projects & apps.
+c) it is performed based on the keywords specified in the excel sheet of the project.
+
+i) Pros - A single keyword can be used across multiple test scripts, so the code is reusable.
+
+ii) Cons - The initial cost of setting up the framework is high, & it is time consuming & complex.
+
+6) Hybrid Framework - combine Keyword & Data Driven Frameworks.
+
+i) Pros - type leverages the advantages of all kind of related frameworks.
+
+ii) Cons - tests are fully scripted in Hybrid Framework.
+
+
+
+
+
+
+

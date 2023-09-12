@@ -1,4 +1,4 @@
-Log 4j Topic – 11/9/2023 - 
+I) Log 4j Topic – 11/9/2023 - 
  
 Ref Website - https://www.browserstack.com/guide/log4j-in-selenium
  
@@ -38,14 +38,28 @@ To truly understand its functioning, let’s dig a little deeper and discuss the
  
 Logger has logger class & logger levels
  
-i) Logger Class - 
+Logger Class – To fully use the logger, create an instance for a logger class where all the generic methods will be at the user’s disposal, required to use Log4j.
 
+Log Levels – These are the methods that will be used to print the log messages. There are primarily only a few log levels that are used in a script.
 
+Log 4j methods - 
+
+ALL – This level will prioritize and include everything in the logs.
+
+ERROR – This level will show messages that inform users about error events that may not stop the application.
+
+WARN – This level will show information regarding warnings, that may not stop the execution but may still cause problems.
+
+DEBUG – This level will log debugging information.
+
+INFO – This level will log the progress of the application.
+
+FATAL – This will print information critical to the system that may even crash the application.
  
-Log 4j 2 latest methods - 
+Log 4j 2 latest methods Logger Levels - 
  
 OFF
- 
+ c
 FATAL
  
 ERROR - To start logging messaegs using this basic configuration all you need to is to obtain a logger instance using the Log Manage class.
@@ -73,7 +87,69 @@ i) first create a 'log' reference variable using 'public static Logger log;' bef
 ii) log instance is created using 'log = LogManager.getLogger(Login.class)' inside the function that is written in @BeforeTest.
 iii) Then log.info("Opening Google") message is recorded after running the website & opening "google.com".
 iv) log.error ("Our_Message") is also added which is to be added in the catch block of try --- catch block for error handling
-v) Then we simply follow the process written above in Step 2 , 3 , 4
+v) Then we simply follow the process written above in Step 2 , 3 , 4.
+
+9) Appenders
+
+The appender basically grabs information from the logger and writes log messages to a file or any other storage location. 
+
+The following are some of the appenders one can use for Log4j:
+
+i) FileAppender – This will append the log messages to a file.
+
+ii) RollingFileAppender – It will perform the same function as FileAppender, but users will be able to specify the maximum file size. Once the limit is exceeded, the appender will create another file to write the messages.
+
+iii) DailyRollingFileAppender – It specifies the frequency by which the messages are to be written to the file.
+
+iv) ConsoleAppender – In this, the appender will simply write the log messages in the console.
+
+10) Layout
+
+The layout is where the format in which log messages will appear is decided. There are several layouts one can use for log messages:
+
+i) Pattern Layout – The user must specify a conversion pattern based on which the logs will be displayed. Otherwise, it takes the default conversion pattern in case of “no pattern specified”.
+
+ii) HTML Layout – In this layout, the format of logs will be in the form of an HTML table.
+
+iii) XML Layout – This will show the logs in an XML format.
+
+Now, let’s take a look at how to download and set up Log4j.
+
+**Why we require properties file in log?
+To configure the 3 components of log4j.
+
+11) Log4j with Properties File Configuration
+The properties configuration file will contain the information regarding the following:
+
+a) The first objective is to identify the log level and the destination where the log will be written. In this case, the log level is the DEBUG level and a file is the destination.
+
+b) The next step is to establish an appender. This example uses a RollingFIleAppender with a maximum capacity of 2MB and the file location is also specified in this section. The MaxBackupIndex is the number of files that will be created in case the file size is exceeded.
+
+c) The last section contains the layout in which a format is specified. This example uses PatternLayout. And, since we have not used a conversion pattern here, it will take the default conversion pattern into account.
+
+***layout.pattern = [%-5level] %d{yyyy-MM-dd HH:mm:ss.SSS} [%t] %c{1} - %msg%n
+
+
+12) Why Use Log4j in Selenium ?
+
+*Use Log4j logging framework in Selenium for the following reasons :-
+
+	1) Log4j logging framework can help in debugging applications easily. With different log levels, it becomes easier to sort information based on categories.
+
+	2) The logging framework is open source and can help in logging in different log levels and suppress logs in different environments – which ultimately improves application performance.
+
+	3) The framework produces better output in general.
+
+	4) With three components and clarity in usage, it becomes easier to use and configure log4j in Selenium.
+
+	5) The setup is easy and free of cost, making it more accessible for faster debugging.
+
+
+
+
+
+
+
 
 
  

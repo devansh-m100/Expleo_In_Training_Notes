@@ -1,0 +1,66 @@
+11/9/2023 - Cucumber Framework - 
+
+1) Cucumber -> software tool used by the testers to develop test cases for the testing behaviour of the software.
+
+2) In Cucumber, the test cases are written in simple English which anybody can understand without technical expertise. (eg. business analyst, project manager)
+
+3) The simple English text is called the GHERKIN language.
+
+4) What is Gherkin ? 
+
+a) business readable language which helps to describe wihtout going into the implementation details. it is used in feature file.
+
+b) It is line - oriented language.
+
+c) start with a keyword & ends with a stop.
+
+d) It is a feature like thing which always starts with a keyword & ends with a stop.
+
+5) The Cucumber Framework: BDD Framework for Selenium
+
+Cucumber BDD framework mainly consists of three major parts – 
+a) Feature File, 
+b) Step Definitions, and the 
+c) Test Runner File.
+
+a) Feature File -> A standalone unit or a single functionality (like login) for a project.
+EAch of this feature will have separate scenario which is to be tested using selenium integrated with cucumber. A file that stores data about features, their descriptions & scenarios
+
+Cucumber tests are written within these feature files that are stored with the extension .feature.
+
+A feature file can be given a description to make the documentation more legible.
+
+**Keywords such as Given, When & Then used to test in Cucumber are called Annotations.
+
+*Difference between feature & scenario is -> Feature is high level in depth feature. 
+
+*Multiple scenarios can be stored in a single feature.
+
+*Each when is considered as a single step.
+
+*Then - Expected output.
+
+*BackGround - helps you to add some context to the scenario. 
+
+GIVEN - Precondition of a particular test.
+WHEN - 
+THEN - 
+AND & BUT - combine mulitple into 
+
+2) Step Definitions -
+*Its a JAVA file.
+*Stores the mapping data between each step of a scenario between feature file & code to be executed.
+*Used to map feature file to the code, It can use both Java & Selenium commands.
+
+3) TEST RUNNER FILE - 
+
+
+
+
+
+
+
+
+
+
+
